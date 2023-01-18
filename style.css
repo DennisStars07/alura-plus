@@ -1,0 +1,156 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: "Inter";
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1 {
+    color: var(--branco-principal);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+/* O * atua em cima de todos os elementos HTML do arquivo, o que tem abaixo poderia ser resolvido no reset CSS mas também mexeria em mais coisas. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    /* Inserindo imagem de fundo */
+    background-image: url("Imagens/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center; /* Todos os itens da seção são centralizados */
+    text-align: center;  /* Alinha não somente textos mas tudo que está dentro de um bloco */
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    color: var(--branco-principal);
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.texto__aviso {
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.divPrincipal {
+    margin: 0 6em;
+}
+
+.imgPlataforma {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 10em;
+}
+
+.descricao__titulo{
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.3em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;  /* Centralizando tudo dentro do container */
+}
+
+.dispositivos__lista {
+    display: flex; /* Coloca os itens da lista alinhados horizontalmente */
+    justify-content: center;  /* Centralizando itens */
+    list-style-type:none;  /* Retirando a marca de itens da lista */
+}.lista__link {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+
+.rodape {
+    text-align: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 1em 4em 3em 4em;
+}
+
+
+.link__item a {
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 1em;
+    color: var(--branco-principal);
+}
+
+.link__item a:hover {
+    color : var(--botao-azul);
+}
+
+link__item a:active{
+    color: purple;
+
+}
+
+.container__botao:hover{
+    color: var(--cor-de-fundo);
+    background-color: var(--botao-azul);
+}
+
+.rodape__texto {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cinza-secundario);
+    margin: 1em auto 1em auto;
+    
+}
